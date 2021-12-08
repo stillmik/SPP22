@@ -1,0 +1,11 @@
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\bin\Debug\SByteGeneratorPlugin.dll
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\bin\Debug\SByteGeneratorPlugin.pdb
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\bin\Debug\Faker.exe
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\bin\Debug\Faker.pdb
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\bin\Debug\Faker.exe.config
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\obj\Debug\SByteGeneratorPlugin.csproj.AssemblyReference.cache
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\obj\Debug\SByteGeneratorPlugin.csproj.CoreCompileInputs.cache
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\obj\Debug\SByteGeneratorPlugin.csproj.CopyComplete
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\obj\Debug\SByteGeneratorPlugin.dll
+C:\Users\37529\RiderProjects\Faker\SByteGeneratorPlugin\obj\Debug\SByteGeneratorPlugin.pdb

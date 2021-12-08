@@ -1,0 +1,11 @@
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\bin\Debug\UshortGeneratorPlugin.dll
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\bin\Debug\UshortGeneratorPlugin.pdb
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\bin\Debug\Faker.exe
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\bin\Debug\Newtonsoft.Json.dll
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\bin\Debug\Faker.pdb
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\bin\Debug\Faker.exe.config
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\obj\Debug\UshortGeneratorPlugin.csproj.AssemblyReference.cache
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\obj\Debug\UshortGeneratorPlugin.csproj.CoreCompileInputs.cache
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\obj\Debug\UshortGeneratorPlugin.csproj.CopyComplete
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\obj\Debug\UshortGeneratorPlugin.dll
+C:\Users\37529\RiderProjects\Faker\UshortGeneratorPlugin\obj\Debug\UshortGeneratorPlugin.pdb
