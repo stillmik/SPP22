@@ -11,6 +11,7 @@ namespace Faker
     public class Faker : IFaker
     {
         private readonly List<Type> circularReferencesEncounter;
+        private readonly List<Type> circularReferencesEncounter2;
 
         private Dictionary<Type, IGenerator> generators;
         private List<ConstructorInfo> list = new List<ConstructorInfo>();
@@ -34,6 +35,7 @@ namespace Faker
             PluginLoader loader = new PluginLoader(generators);
             loader.LoadPluginGenerators();
             circularReferencesEncounter = new List<Type>();
+            circularReferencesEncounter2 = new List<Type>();
         }
 
         public T Create<T>()
@@ -45,6 +47,7 @@ namespace Faker
         public object Create(Type type)
         {
             object instance;
+            countOfException = 0;
 
             if (TryGenerateAbstract(type, out instance))
                 return instance;
@@ -151,8 +154,16 @@ namespace Faker
 
             if (circularReferencesEncounter.Contains(type))
             {
-                instance = default;
-                return true;
+                if (circularReferencesEncounter2.Contains(type))
+                {
+                    instance = default;
+                    return true;
+                }
+                circularReferencesEncounter2.Add(type);
+            }
+            else
+            {
+                circularReferencesEncounter.Add(type);
             }
 
             circularReferencesEncounter.Add(type);
@@ -161,7 +172,12 @@ namespace Faker
                 GenerateFillProps(instance, type);
                 GenerateFillFields(instance, type);
 
-                circularReferencesEncounter.Remove(type);
+                if (circularReferencesEncounter.Contains(type) && circularReferencesEncounter2.Contains(type))
+                {
+                    circularReferencesEncounter2.Remove(type);
+                }
+                else
+                    circularReferencesEncounter.Remove(type);
                 return true;
             }
 
@@ -192,7 +208,7 @@ namespace Faker
                         parameters[i] = prms[i];
                     }
 
-                instance = list[constructor].Invoke(parameters);
+                instance = list[parameters.Length - 1].Invoke(parameters);
                 return true;
             }
 
@@ -217,11 +233,8 @@ namespace Faker
               
                         ctn = ctns[i];
                         list.Add(ctn);
-                    }
-                    
+                    }                    
             }
-            
-
 
             if (ctn == null)
                 return false;
